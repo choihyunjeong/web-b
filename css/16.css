@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    height: 3000px;
+}
+.position {
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+    margin: 50px auto;
+
+    position: relative;
+    top: 150px;
+}
+.position div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.position div:nth-child(1) {
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.position div:nth-child(2) {
+    background-color: rgb(201, 201, 255);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.position div:nth-child(3) {
+    background-color: rgb(196, 151, 238);
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+}
+.position div:nth-child(4) {
+    background-color: aquamarine;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.position div:nth-child(5) {
+    background-color: rgb(230, 154, 154);
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+.position div:nth-child(6) {
+    background-color: rgb(255, 213, 213);
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+.position div:nth-child(7) {
+    background-color: orange;
+    position: sticky;
+    /* 부모 영역 안에서 위치 고정 */
+    top: 50px;
+}
+
+.list {
+    width: 800px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.list .item {
+    width: 380px;
+    position: relative;
+}
+.list .item img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+.list .item .text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgba(25, 48, 175, 0.507);
+    text-align: center;
+}
+
+.list-02 {
+    width: 1280px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.list-02 .item {
+    width: 300px;
+    position: relative;
+}
+.list-02 .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: conver;
+    border-radius: 50%;
+    display: block;
+}
+.list-02 .item p {
+    background-color: rgba(63, 39, 157, 0.291);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* 본인이 가지고 있는 크기의 반만큼씩 이동. -는 앞으로 */
+}

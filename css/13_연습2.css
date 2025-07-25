@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.wrap {
+    width: 1920px;
+    margin: 0 auto;
+}
+.wrap .top {
+    position: relative;
+}
+.wrap .top .main {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrap .top img {
+    width: 100%;
+    height: 1080px;
+    object-fit: cover; 
+}
+.wrap .top .main .box2 {
+    width: 981px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.wrap .top .main .box1 img {
+    width: 150px;
+    height: 35px;
+    object-fit: cover;
+}
+.wrap .top .main .box2 p {
+    width: 150px;
+    text-align: center;
+    color: white;
+}
+.wrap .top .main .box3 {
+    width: 374px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .top .main .box3 p {
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    line-height: 50px;
+}
+.wrap .top .main .box3 a p:nth-child(1) {
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.wrap .top .main .box3 a p:nth-child(2) {
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.wrap .pico {
+    width: 1440px;
+    margin: 150px auto;
+}
+.wrap .pico h2 {
+    font-size: 46px;
+    margin-bottom: 60px;
+}
+.wrap .pico .list {
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .pico .list .item {
+    width: 456px;
+    text-align: center;
+}
+.wrap .pico .list .item img {
+    width: 100%;
+    height: 456px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.wrap .pico .list .item h3 {
+    font-size: 27px;
+}
+.wrap .low {
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrap .low img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.wrap .low .inner {
+    width: 1600px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.wrap .low .inner .text {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.wrap .low .inner .text img {
+    width: 295px;
+    height: 84px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto 25px;
+}
+.wrap .low .inner .text p {
+    font-size: 18px;
+}
+.wrap .low .inner .text p:nth-child(1) {
+    font-weight: bold;
+    font-size: 24px;
+}
+.wrap .low .inner .list {
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .low .inner .list .item {
+    width: 288px;
+    height: 288px;
+    border-radius: 50%;
+    background-color: #ffffff27;
+    display: flex;
+    flex-direction: column;
+    /* flex값으로 옆으로 붙은 아이템들을 다시 떨어뜨려준다 flex-direction:column을 쓰고
+    justify-content: center;를 쓰면 수평정렬의 방향이 바뀐다 */
+    justify-content: center;
+}
+.wrap .low .inner .list .item img {
+    width: 67px;
+    height: 67px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    display: block;
+}
+.wrap .low .inner .list .item p {
+    font-size: 26px;
+    text-align: center;
+}

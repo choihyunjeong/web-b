@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.shadow div {
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    margin: 20px;
+}
+.shadow div:nth-of-type(1) {
+    box-shadow: 10px 40px 20px rgba(0, 128, 128, 0.418);
+}
+/* 다른 태그들이 섞여있을때 div들 중에서 몇번째를 하고 싶으면 nth-of-type으로 그림자 : x축 y축 블러 색상 */
+.shadow div:nth-of-type(2) {
+    box-shadow: -10px -40px 20px rgba(0, 128, 128, 0.438);
+}
+.shadow div:nth-of-type(3) {
+    box-shadow: 5px 5px 10px red,
+                10px 10px 10px orange,
+                20px 20px 10px yellow;
+}
+.shadow div:nth-of-type(4) {
+    box-shadow: inset 20px 20px 40px rgba(255, 0, 0, 0.473);
+}
+.shadow div:nth-of-type(5) {
+    box-shadow: 0 0 40px rgba(128, 0, 128, 0.5);
+}
