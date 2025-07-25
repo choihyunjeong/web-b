@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .bg-01 {
+            background-color: aqua;
+            margin: 50px;
+            background-image: url('img/이미지1.jpg');
+            height: 300px;
+            background-size: cover;
+            /* 높이값을 하나만 작성했을때는 가로값만 잡히고 세로값은 알아서 설정됨. 
+            두개값을 작성하면 가로*세로값. %는 bg-01의 크기의 %만큼 설정.
+            cover-설정했던 영역안에 이미지가 가득채워진다 일부가 잘릴 수도 있다.(가장 많이 사용)
+            contain-가로크기나 세로크기 둘 중에 하나가 가득채워지고 나머지 한부분은 비울설정. */
+            background-repeat: no-repeat;
+            /* repeat-x:x축으로 이미지반복 repeat-y:y축으로 이미지반복 no-repeat:반복안됨. repeat:기본값 */
+            background-position: center bottom;
+            /* x축 left, center, right y축 top, center, bottom */
+        }
+        .bg-02 {
+            height: 300px;
+            background-color: antiquewhite;
+            margin: 50px;
+            background: url('img/이미지7.jpg') center center / cover no-repeat;
+            /* 배경 : 이미지경로  x축위치 y축위치  /  사이즈  이미지반복
+            /무조건 넣어주어야함 /앞은 위치 /뒤는 사이즈(순서 바뀌면 안됨) */
+        }
+        .bg-03 {
+            height: 500px;
+            margin: 50px;
+            background: url('img/이미지3.jpg') left center / cover no-repeat fixed;
+            /* background-attachment: fixed; 배경이미지를 고정 기본값은 scroll */     
+        }
+        .bg-04 {
+            height: 300px;
+            margin: 50px;
+            background: #EEAECA;
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-01">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae tempore ipsum repellendus, maxime, necessitatibus eaque placeat incidunt est obcaecati eveniet laborum provident et, natus dolores consectetur iste odio nam.</p>
+    </div><!-- .bg-01 end -->
+    <div class="bg-02">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae tempore ipsum repellendus, maxime, necessitatibus eaque placeat incidunt est obcaecati eveniet laborum provident et, natus dolores consectetur iste odio nam.</p>
+    </div><!-- .bg-02 end -->
+    <div class="bg-03">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae tempore ipsum repellendus, maxime, necessitatibus eaque placeat incidunt est obcaecati eveniet laborum provident et, natus dolores consectetur iste odio nam.</p>
+    </div><!-- .bg-03 end -->
+    <div class="bg-04">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae tempore ipsum repellendus, maxime, necessitatibus eaque placeat incidunt est obcaecati eveniet laborum provident et, natus dolores consectetur iste odio nam.</p>
+    </div><!-- .bg-04 end -->
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        .wrap {
+            width: 375px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .wrap .img img {
+            padding: 17px 18px 0;
+        }
+        .wrap .img2 img {
+            margin: 28px 0 55px 10px;
+            width: 24px;
+        }
+        .wrap .text {
+            margin: 0 19px;
+        }
+        .wrap .text strong {
+            font-size: 20px;
+            padding-bottom: 12px;
+            display: block;
+        }
+        .wrap .text p {
+            font-size: 14px;
+            color: #888888;
+            margin-bottom: 40px;
+        }
+        .wrap .box01 .list {
+            width: 339px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 16px 18px;
+        }
+        .wrap .box01 .list img {
+            width: 32px;
+        }
+        .wrap .box01 .list a {
+            color: #888888;
+            font-size: 14px;
+        }
+        .wrap .box01 .first {
+            width: 339px;
+            display: flex;
+            align-items: center;
+            margin: 16px 18px;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .wrap .box01 .first img {
+            padding-bottom: 20px;
+            width: 32px;
+        }
+        .wrap .box01 .first .info {
+            padding-left: 11px;
+        }
+        .wrap .box01 .list .info {
+            display: flex;
+            align-items: center;
+        }
+        .wrap .box01 .list .info p {
+            padding-left: 11px;
+        }
+        .wrap .box01 .first .info strong {
+            display: block;
+            font-size: 18px;
+            padding-bottom: 9px;
+        }
+        .wrap .box01 .first .info span {
+            display: block;
+            font-size: 13px;
+            color: #888888;
+            padding-bottom: 16px;
+        }
+        .wrap .box02 {
+            margin-top: 142px;
+        }
+        .wrap .box02 a {
+            width: 339px;
+            height: 50px;
+            background-color: #6532E9;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            margin: 0 auto;
+            display: block;
+        }
+        .wrap .img3 img {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="img">
+            <img src="img/Android-status-bar.png" alt="">
+        </div>
+        <div class="img2">
+            <a href="#"><img src="img/prev.png" alt=""></a>
+        </div><!-- .img end -->
+        <div class="text">
+            <strong>약관에 동의해주세요</strong>
+            <p>여러분의 개인정보와 서비스 이용 권리<br />
+            잘 지켜드릴께요</p>
+        </div><!-- .text end -->
+
+        <div class="box01">
+            <div class="first">
+                <a href="#"><img src="img/active.png" alt=""></a>
+                <div class="info">
+                    <strong>모두 동의</strong>
+                    <span>서비스 이용을 위해 아래 약관에 모두 동의합니다.</span>
+                </div><!-- .info end -->
+            </div><!-- .list end -->
+            <div class="list">
+                <div class="info">
+                    <a href="#"><img src="img/active.png" alt=""></a>
+                    <p>(필수) 만 14세 이상입니다.</p>
+                </div><!-- .info end -->
+            </div><!-- .list end -->
+            <div class="list">
+                <div class="info">
+                    <a href="#"><img src="img/active.png" alt=""></a>
+                    <p>(필수) 서비스 이용약관 동의</p>
+                </div><!-- .info end -->
+                <a href="#">보기</a>
+            </div><!-- .list end -->
+            <div class="list">
+                <div class="info">
+                    <a href="#"><img src="img/active.png" alt=""></a>
+                    <p>(필수) 개인 정보 처리방침 동의</p>
+                </div><!-- .info end -->
+                <a href="#">보기</a>
+            </div><!-- .list end -->
+            <div class="list">
+                <div class="info">
+                    <a href="#"><img src="img/active.png" alt=""></a>
+                    <p>(필수) 민감정보 수집 및 이용 동의</p>
+                </div><!-- .info end -->
+                <a href="#">보기</a>
+            </div><!-- .list end -->
+            <div class="list">
+                <div class="info">
+                    <a href="#"><img src="img/active.png" alt=""></a>
+                    <p>(필수) 마케팅 수신 동의</p>
+                </div><!-- .info end -->
+                <a href="#">보기</a>
+            </div><!-- .list end -->
+        </div><!-- .box01 end -->
+        <div class="box02">
+            <a href="#">다음</a>
+        </div><!-- .box02 end -->
+        <div class="img3">
+            <img src="img/iPhone-status-bar(lower).png" alt="">
+        </div><!-- .img2 end -->
+    </div><!-- .wrap end -->
+</body>
+</html>

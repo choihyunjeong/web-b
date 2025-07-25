@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가로배치</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .list {
+            width: 600px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }/* display:flex-가로배치 flex-wrap:wrap-설정한 가로 넓이만큼 떨어뜨려준다(display:flex가 있어야지만 사용가능하다) justify-content:space-between-사이 간격이 자동으로 조절. margin:0 auto;를 주면 가운데로 정렬. */
+        .list .item {
+            width: 270px;
+            margin-bottom: 40px;
+        }/* 마진은 개체와 개체사이의 간격을 벌려주는것. 페딩은 개체의 영역을 늘려주는것. */
+        .list .item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }/* 부모의 값을 따라갈때 100%로 설정하면 부모의 넓이가 바껴도 똑같이 바뀐다. object-fit:cover 이미지 비율 맞춰준다. */
+        .content {
+            width: 600px;
+            background-color: rgb(207, 229, 230);
+            margin: 0 auto;
+            padding: 0 16px;
+            box-sizing: border-box;
+        }/* box-sizing:border-box=설정한 사이즈안에 페딩값이 적용되서 들어가도록 적용해줌. */
+        .content ul {
+            display: flex;
+        }
+        .content ul li {
+            height: 40px;
+            border: 1px solid #000000;
+            padding: 0 10px;
+            margin-right: 10px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <div class="item">
+            <img src="img/이미지3.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam accusantium minus ratione, sit harum perspiciatis at iusto corporis magnam culpa, magni deleniti quas asperiores eius vel deserunt fuga necessitatibus.</p>
+        </div><!-- .item end -->
+        <div class="item">
+            <img src="img/이미지4.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam accusantium minus ratione, sit harum perspiciatis at iusto corporis magnam culpa, magni deleniti quas asperiores eius vel deserunt fuga necessitatibus.</p>
+        </div><!-- .item end -->
+        <div class="item">
+            <img src="img/이미지5.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam accusantium minus ratione, sit harum perspiciatis at iusto corporis magnam culpa, magni deleniti quas asperiores eius vel deserunt fuga necessitatibus.</p>
+        </div><!-- .item end -->
+        <div class="item">
+            <img src="img/이미지6.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam accusantium minus ratione, sit harum perspiciatis at iusto corporis magnam culpa, magni deleniti quas asperiores eius vel deserunt fuga necessitatibus.</p>
+        </div><!-- .item end -->
+    </div><!-- .list end -->
+    <div class="content">
+        <h1>동네서점</h1>
+        <ul>
+            <li>베스트</li>
+            <li>신상품</li>
+            <li>이벤트</li>
+            <li>사은품</li>
+        </ul>
+    </div><!-- .content end -->
+</body>
+</html>
