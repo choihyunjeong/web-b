@@ -16,4 +16,8 @@ body {
     font-size: 30px;
     color: #fff;
     font-weight: bold;
+    transition: top 500ms;
+}
+.header.active {
+    top: -100px;
 }

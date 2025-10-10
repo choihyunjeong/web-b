@@ -14,8 +14,14 @@
             window.addEventListener('scroll', () => {
                 let scrollBar = window.scrollY; //현재 스크롤바의 위치
 
-                console.log(prevScrollBar)
-                console.log(scrollBar)
+                //console.log(prevScrollBar)
+                //console.log(scrollBar)
+
+                if (scrollBar > prevScrollBar) {
+                    header.classList.add('active');
+                } else {
+                    header.classList.remove('active');
+                }
 
                 prevScrollBar = scrollBar;
             }); //scroll()
