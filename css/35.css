@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+    height: 100px;
+    position: relative;
+    z-index: 99;
+    /* z-index는 포지션이랑 같이 쓸 수 있음
+    position:absolute나 fixed를 쓰면 위치가 틀어지기 때문에 relative */
+}
+.header .inner {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .logo {
+    height: 60px;
+}
+.header .inner .logo a {
+    height: 100%;
+    display: block;
+}
+.header .inner .logo a img {
+    height: 100%;
+    /* 로고와 아이콘들에게는 cover 쓰지말고 가로나 세로만 적용 */
+}
+.header .inner .nav .gnb {
+    display: flex;
+}
+.header .inner .nav .gnb > li {
+    position: relative;
+}
+.header .inner .nav .gnb > li .depth-01 {
+    line-height: 100px;
+    display: block;
+    padding: 0 30px;
+}
+.header .inner .nav .gnb > li .depth-02 {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #333;
+    white-space: nowrap;/* 자동줄바꿈 안되게 하는 옵션 */
+    display: none;
+}
+.header .inner .nav .gnb > li:hover .depth-02 {
+    display: block;
+}
+.header .inner .nav .gnb > li .depth-02 li:hover {
+    background-color: #000;
+    color: #fff;
+}
+.header .inner .nav .gnb > li .depth-02 li a {
+    padding: 12px 20px;
+    display: block;
+}
+.header .inner .util {
+    display: flex;
+    gap: 16px;
+}
+.main_visual {
+    height: 100vh;
+    position: relative;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main_visual .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.main_visual .text h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.main_visual .text a {
+    display: block;
+    width: 160px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+.main_visual .text a:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

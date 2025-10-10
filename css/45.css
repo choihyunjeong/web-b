@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.image img {
+    width: 500px;
+}
+.svg_image svg:hover path {
+    fill: cadetblue;
+}
+.svg_image-02 {
+    position: relative;
+}
+.svg_image-02 p {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(205, 151, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    offset: path('M97.3314 2.37062C97.7067 -0.790205 102.293 -0.790205 102.669 2.37062L105.815 28.887C109.878 63.1269 136.873 90.1224 171.113 94.1851L197.629 97.3314C200.79 97.7067 200.79 102.293 197.629 102.669L171.113 105.815C136.873 109.878 109.878 136.873 105.815 171.113L102.669 197.629C102.293 200.79 97.7067 200.79 97.3314 197.629L94.1851 171.113C90.1224 136.873 63.1269 109.878 28.887 105.815L2.37062 102.669C-0.790205 102.293 -0.790205 97.7067 2.37062 97.3314L28.887 94.1851C63.1269 90.1224 90.1224 63.1269 94.1851 28.887L97.3314 2.37062Z');
+    animation: svgImage 5s infinite linear;
+}
+
+@keyframes svgImage {
+    0% {
+        offset-distance: 0;
+    }
+    100% {
+        offset-distance: -100%;
+    }
+}

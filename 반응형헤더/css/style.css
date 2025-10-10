@@ -1,0 +1,266 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    background-color: #000;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+.mobile {
+    display: none;
+}
+.header {
+    width: 100%;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.header .inner {
+    max-width: 1825px;
+    width: calc(100% - 48px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header .inner .logo {
+    height: 21px;
+}
+.header .inner .logo a {
+    display: block;
+    height: 100%;
+}
+.header .inner .logo a img {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.header .inner .nav_pc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.header .inner .nav_pc .gnb {
+    display: flex;
+    gap: 7px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.header .inner .nav_pc .gnb li:first-child {
+    width: 97px;
+    height: 36px;
+    text-align: center;
+}
+.header .inner .nav_pc .gnb li:first-child .depth-01 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 34px;
+    line-height: 22px;
+}
+.header .inner .nav_pc .gnb li:nth-child(2) {
+    width: 90px;
+    height: 36px;
+    text-align: center;
+}
+.header .inner .nav_pc .gnb li:nth-child(2) .depth-01 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 34px;
+    line-height: 22px;
+}
+.header .inner .nav_pc .gnb li:nth-child(3) {
+    width: 130px;
+    height: 36px;
+    text-align: center;
+}
+.header .inner .nav_pc .gnb li:nth-child(3) .depth-01 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 34px;
+    line-height: 22px;
+}
+.header .inner .nav_pc .gnb li:nth-child(4) {
+    width: 108px;
+    height: 36px;
+    text-align: center;
+}
+.header .inner .nav_pc .gnb li:nth-child(4) .depth-01 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 34px;
+    line-height: 22px;
+}
+.header .inner .nav_pc .gnb li:nth-child(5) {
+    width: 106px;
+    height: 36px;
+    text-align: center;
+}
+.header .inner .nav_pc .gnb li:nth-child(5) .depth-01 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 34px;
+    line-height: 22px;
+}
+.header .inner .nav_pc .gnb li:nth-child(6) {
+    width: 118px;
+    height: 36px;
+    text-align: center;
+}
+.header .inner .nav_pc .gnb li:nth-child(6) .depth-01 {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 34px;
+    line-height: 22px;
+}
+.header .inner .nav_pc .gnb .depth-01 .line {
+    display: inline-block;
+    width: 0;
+    color: #000;
+}
+.header .inner .nav_pc .gnb .depth-01:hover {
+    background-color: #fff;
+    color: #000;
+}
+.header .inner .nav_pc .gnb .depth-01:hover .line {
+    width: auto;
+}
+.header .inner .nav_pc .gnb .depth-01 {
+    display: block;
+    padding: 6px 11px;
+}
+.header .inner .global_pc {
+    display: flex;
+    gap: 16px;
+    color: #fff;
+}
+.header .inner .global_pc .depth-01 {
+    display: block;
+    font-size: 14px;
+}
+.header .inner .global_pc li:last-child {
+    color: #9F9FA1;
+}
+.main_visual {
+    height: 100vh;
+    position: relative;
+}
+.main_visual img {
+    width: 40.52%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: -1;
+}
+
+@media screen and (max-width:1024px) {
+    .pc, .header .inner .global_pc {
+        display:none;
+    }
+    .mobile {
+        display: block;
+    }
+    .header .inner .menu_btn {
+        height: 38px;
+        border: 0;
+        background-color: transparent;
+    }
+    .header .inner .menu_btn img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .header .inner .nav_mobile {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 24px;
+        color: #fff;
+        overflow-y: auto;
+    }
+    .header .inner .nav_mobile.active {
+        right: 0;
+    }
+    .header .inner .nav_mobile .close_btn {
+        display: block;
+        height: 38px;
+        border: 0;
+        background-color: transparent;
+        position: absolute;
+        top: 17px;
+        right: 24px;
+    }
+    .header .inner .nav_mobile .close_btn img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .header .inner .nav_mobile .gnb {
+        padding: 155px 32px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 24px;
+    }
+    .header .inner .nav_mobile .gnb li {
+        font-size: 55px;
+        font-weight: bold;
+        line-height: 64px;
+    }
+    .header .inner .nav_mobile .gnb li .depth-01 {
+        padding: 6px 8px;
+        display: block;
+    }
+    .header .inner .nav_mobile .mobile_bottom {
+        width: 100%;
+        padding: 0 20px 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .inner .nav_mobile .mobile_bottom p {
+        font-size: 14px;
+        color: #9F9FA1;
+    }
+    .header .inner .nav_mobile .mobile_bottom .global_mobile {
+        display: flex;
+        gap: 16px;
+    }
+    .header .inner .nav_mobile .mobile_bottom .global_mobile li:nth-child(2) {
+        color: #9F9FA1;
+    }
+    .main_visual img {
+        max-width: 539px;
+        width: 69%;
+    }
+}

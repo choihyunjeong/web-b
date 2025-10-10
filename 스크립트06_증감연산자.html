@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>증감 연산자</title>
+    <script>
+        window.onload = () => {
+            let num = document.getElementsByClassName('num')[0];
+            let downBtn = document.getElementsByClassName('down')[0];
+            let upBtn = document.getElementsByClassName('up')[0];
+            //초기값  시작하고자 하는 값
+            let i = 0;
+            upBtn.addEventListener('click', () => {
+                //alert();
+                i++;
+                //console.log(i++)
+                num.innerHTML = i;
+            });
+            downBtn.addEventListener('click', () => {
+                i--;
+                if(i < 0) {
+                    i = 0;
+                }
+                num.innerHTML = i;
+            });
+        };//script end
+    </script>
+</head>
+<body>
+    <div class="btn_wrap">
+        <button class="down">감소-</button>
+        <span class="num">0</span>
+        <button class="up">증가+</button>
+    </div><!-- .btn_wrap end -->
+</body>
+</html>

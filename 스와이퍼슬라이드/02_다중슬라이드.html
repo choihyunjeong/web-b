@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다중 슬라이드</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,/* 슬라이드 갯수 */
+                spaceBetween: 15,/* 사이 간격 */
+                autoplay: {
+                    delay: 2500, /* 지연시간 */
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                speed: 1000 /* 슬라이드 돌아가는 시간 */
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="css/02.css">
+</head>
+
+<body>
+    <section class="section-01">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/이미지2.jpg" alt="">
+                </div><!-- .swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/이미지3.jpg" alt="">
+                </div><!-- .swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/이미지4.jpg" alt="">
+                </div><!-- .swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/이미지5.jpg" alt="">
+                </div><!-- .swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/이미지6.jpg" alt="">
+                </div><!-- .swiper-slide end -->
+                <div class="swiper-slide">
+                    <img src="img/이미지7.jpg" alt="">
+                </div><!-- .swiper-slide end -->
+            </div><!-- .swiper-wrapper end -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div><!-- .slide per view end -->
+    </section><!-- .section-01 end -->
+</body>
+
+</html>

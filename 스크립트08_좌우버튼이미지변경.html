@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌우버튼 이미지 변경</title>
+    <link rel="stylesheet" href="css/스크립트08.css">
+    <script>
+        window.onload = () => {
+            let box = document.getElementsByClassName('box')[0];
+            let boxImage = box.getElementsByTagName('img')[0];
+            let boxPrev = box.getElementsByClassName('prev')[0];
+            let boxNext = box.getElementsByClassName('next')[0];
+            let boxNum = box.getElementsByClassName('num')[0];
+            let boxAllNum = box.getElementsByClassName('all_num')[0];
+
+            let i = 0;
+            let imageList = ['img/image 1.jpg', 'img/image 2.jpg', 'img/image 3.jpg', 'img/image 4.jpg']
+
+            //console.log(imageList.length)
+
+            boxAllNum.innerHTML = '<span>/</span>' + imageList.length;
+
+            boxPrev.addEventListener('click', () => {
+                i--;
+                if(i < 0 ) {
+                    i = 0;
+                }
+                boxImage.src = imageList[i];
+                boxNum.innerHTML = i + 1;
+            });
+            boxNext.addEventListener('click', () => {
+                i++;
+                if(i >= imageList.length) {
+                    i = imageList.length - 1;
+                }
+                boxImage.src = imageList[i];
+                boxNum.innerHTML = i + 1;
+            });
+        };//script end
+    </script>
+</head>
+<body>
+    <div class="box">
+        <img src="img/image 1.jpg" alt="">
+        <div class="page">
+            <span class="num">1</span>
+            <span class="all_num"></span>
+        </div><!-- .page end -->
+        <div class="btn">
+            <button class="prev">이전</button>
+            <button class="next">다음</button>
+        </div><!-- .btn end -->
+    </div><!-- .box end -->
+</body>
+</html>

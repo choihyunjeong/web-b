@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        body {
+            background-color: antiquewhite;
+        }
+        .wrap {
+            width: 375px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        .wrap .top img {
+            margin: 17px 18px 28px;
+        }
+        .wrap .prev img {
+            margin-left: 10px;
+        }
+        .wrap .box h1 {
+            font-size: 24px;
+            margin: 46px 18px 28px;
+        }
+        .wrap .box .list {
+            width: 339px;
+            height: 74px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.212);
+            border-radius: 8px;
+            margin: 20px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+        }
+        .wrap .box .list:nth-child(3) {
+            background-color: #E8E8FA;
+        }
+        .wrap .box .list .text strong {
+            font-size: 18px;
+        }
+        .wrap .list2 {
+            margin: 20px 18px 98px;
+        }
+        .wrap .list2 span {
+            height: 40px;
+            background-color: #EEF3FE;
+            border-radius: 50px;
+            padding: 10.5px 12px;
+            display: inline-block;
+            text-align: center;
+            line-height: 18px;
+            margin: 0 6px 12px 0;
+        }
+        .wrap .list3 a {
+            width: 339px;
+            height: 50px;
+            background-color: #6532E9;
+            display: block;
+            color: white;
+            text-align: center; 
+            line-height: 50px;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+        .wrap .low img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <img src="img/Android-status-bar.png" alt="">
+        </div><!-- .top end -->
+        <div class="prev">
+            <a href="#"><img src="img/prev.png" alt=""></a>
+        </div><!-- .prev end -->
+        <div class="box">
+            <h1>복용 중인 약이 있으신가요?</h1>
+            <div class="list">
+                <div class="text">
+                    <strong>복용 중인 약이 없어요</strong>
+                </div><!-- .text end -->
+                <a href="#"><img src="img/default.png" alt=""></a>
+            </div><!-- .list end -->
+            <div class="list">
+                <div class="text">
+                    <strong>복용 중인 약이 있어요</strong>
+                </div><!-- .text end -->
+                <a href="#"><img src="img/active.png" alt=""></a>
+            </div><!-- .list end -->
+            <div class="list2">
+                <a href="#"><span>혈압약</span></a>
+                <a href="#"><span>혈압약</span></a>
+                <a href="#"><span>위장약</span></a>
+                <a href="#"><span>변비약</span></a>
+                <a href="#"><span>소화제</span></a>
+                <a href="#"><span>고지혈증약</span></a>
+                <a href="#"><span>항생제</span></a>
+                <a href="#"><span>소염진통제</span></a>
+                <a href="#"><span>항히스타민제</span></a>
+                <a href="#"><span>갑상선질환 치료제</span></a>
+                <a href="#"><span>여드름 치료제</span></a>
+                <a href="#"><span>통풍 치료제</span></a>
+            </div><!-- .list2 end -->
+        </div><!-- .box end -->
+        <div class="list3">
+            <a href="#">다음</a>
+        </div><!-- .list3 end -->
+        <div class="low">
+            <img src="img/iPhone-status-bar(lower).png" alt="">
+        </div>
+    </div><!-- .wrap end -->
+</body>
+</html>

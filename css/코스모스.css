@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('reset.css');
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.header .inner {
+    max-width: 1785px;
+    width: calc(100% - 32px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .logo {
+    height: 38px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.header .inner .logo a {
+    display: block;
+    width: 38px;
+    height: 100%;
+}
+.header .inner .logo a img {
+    width: 38px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.header .inner img {
+    width: 32px;
+    object-fit: cover;
+    display: block;
+}
+.header .inner .book {
+    padding: 15px 33px 13px;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.main_visual {
+    height: 100vh;
+    position: relative;
+}
+.main_visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: -11;
+}
+.main_visual .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #fff;
+    text-align: center;
+}
+.main_visual .text h2 {
+    font-size: 22px;
+}
+.main_visual .text p {
+    font-size: 14px;
+    margin-top: 24px;
+}
+.main_visual button {
+    display: block;
+    width: 32px;
+    position: absolute;
+    left: 49px;
+    bottom: 29px;
+}
+.main_visual button img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.main_visual .kakao {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+.main_visual .kakao img {
+    display: block;
+    width: 27px;
+    object-fit: cover;
+}
+.header.active {
+    background-color: #000;
+}
+.section-01 {
+    padding: 180px 0 280px;
+}

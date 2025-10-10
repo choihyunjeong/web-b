@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지+텍스트값 가져오기</title>
+    <link rel="stylesheet" href="css/스크립트15.css">
+    <script>
+        window.onload = () => {
+            let itemDetailTitle = document.querySelector('.item_detail .title');
+            let itemDetailText = document.querySelector('.item_detail .text');
+            let itemDetailImage = document.querySelector('.item_detail img');
+
+            let item = document.querySelectorAll('.item');
+            let itemTitle = document.querySelectorAll('.item .title');
+            let itemText = document.querySelectorAll('.item .text');
+            let itemImage = document.querySelectorAll('.item img');
+
+            for(let i = 0; i < item.length; i++) {
+                item[i].addEventListener('click', () => {
+                    itemDetailImage.src = itemImage[i].src;
+                    itemDetailTitle.innerHTML = itemTitle[i].innerHTML;
+                    itemDetailText.innerHTML = itemText[i].innerHTML;
+                });
+            }
+        }; //script end
+    </script>
+</head>
+<body>
+    <section class="section">
+        <div class="inner">
+            <div class="item_detail">
+                <img src="img/image 1.jpg" alt="">
+                <h2 class="title">아이템 1</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eum distinctio quia reprehenderit officia esse vero cum consequatur. Maiores excepturi voluptatum suscipit, eius repellat quaerat aut fugit! Cupiditate, magni aliquid.</p>
+            </div><!-- .item_detail end -->
+            <div class="list">
+                <div class="item">
+                    <img src="img/image 1.jpg" alt="">
+                    <h2 class="title">아이템 1</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eum distinctio quia reprehenderit officia esse vero cum consequatur. Maiores excepturi voluptatum suscipit, eius repellat quaerat aut fugit! Cupiditate, magni aliquid.</p>
+                </div><!-- .item end -->
+                <div class="item">
+                    <img src="img/image 2.jpg" alt="">
+                    <h2 class="title">아이템 2</h2>
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis consequuntur ipsum, asperiores, ipsam laborum quis error dignissimos natus esse similique sunt maxime unde voluptatum quos, tenetur earum corrupti qui provident.</p>
+                </div><!-- .item end -->
+                <div class="item">
+                    <img src="img/image 3.jpg" alt="">
+                    <h2 class="title">아이템 3</h2>
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel sit ipsum libero voluptate, provident voluptates odit et recusandae exercitationem tempora laboriosam. Voluptates, tempora eaque dicta ut id modi qui laborum?</p>
+                </div><!-- .item end -->
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </section><!-- .section end -->
+</body>
+</html>

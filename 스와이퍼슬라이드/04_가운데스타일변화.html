@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가운데 스타일 변화</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/04.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            var swiper = new Swiper(".scale-swiper", {
+                slidesPerView: 3,
+                spaceBetween: 0,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <section class="section-01">
+        <!-- slides per view -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/이미지2.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 1</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지3.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 2</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지4.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 3</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지5.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 4</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지6.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 5</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지7.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 6</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지8.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 7</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지9.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 8</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지10.jpg" alt="">
+                    <div class="text">
+                        <h2>swiper-slide</h2>
+                        <p>slide 9</p>
+                    </div><!-- .text end -->
+                </div><!-- .swiper-slide -->
+            </div><!-- .swiper-wrapper -->
+            <div class="swiper-pagination"></div>
+        </div><!-- .wiper mySwiper -->
+    </section><!-- .section-01 end -->
+
+
+    <section class="section-02">
+        <!-- slides per view -->
+        <div class="swiper scale-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/이미지8.jpg" alt="">
+                    <p>swiper 1</p>
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지7.jpg" alt="">
+                    <p>swiper 2</p>
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지9.jpg" alt="">
+                    <p>swiper 3</p>
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지4.jpg" alt="">
+                    <p>swiper 4</p>
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지5.jpg" alt="">
+                    <p>swiper 5</p>
+                </div><!-- .swiper-slide -->
+                <div class="swiper-slide">
+                    <img src="img/이미지2.jpg" alt="">
+                    <p>swiper 6</p>
+                </div><!-- .swiper-slide -->
+            </div><!-- .swiper-wrapper -->
+            <div class="swiper-pagination"></div>
+        </div><!-- .swiper scale-swiper -->
+    </section><!-- .section-02 end -->
+
+</body>
+
+</html>

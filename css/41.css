@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.ball {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: antiquewhite;
+    animation-name: animationBall;
+
+    /* 애니메이션 횟수 
+    infinite(무한반복) or 숫자 */
+    animation-iteration-count: infinite;
+
+    /* 애니메이션 움직임 속도 */
+    animation-timing-function: linear;
+
+    /* 애니메이션 시간 */
+    animation-duration: 3s;
+
+    /* 애니메이션 방향
+    alternate:정방향에서 번갈아가며 움직임
+    reverse:반대방향에서 시작
+    alternate-reverse: 반대방향에서 번갈아가며 움직임
+    */
+    animation-direction: alternate;
+}
+@keyframes animationBall {
+    0% {
+        width: 150px;
+    }
+    50% {
+        transform: translate(50px, 100px);
+        height: 200px;
+        border-radius: 50%;
+    }
+    100% {
+        width: 200px;
+        background-color: rgb(138, 127, 255);
+        transform: translateX(150px);
+    }
+}
+.text {
+    background-color: cadetblue;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 400px;
+    overflow: hidden;
+}
+.text ul {
+    display: flex;
+    gap: 40px;
+    animation: textSlide 10s infinite alternate linear;
+}
+@keyframes textSlide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-70%);
+    }
+}
+.text ul li {
+    white-space: nowrap;
+}

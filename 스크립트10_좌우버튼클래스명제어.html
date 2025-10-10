@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>좌우버튼 클래스명 제어</title>
+    <link rel="stylesheet" href="css/스크립트10.css">
+    <script>
+        window.onload = () => {
+            let item = document.getElementsByClassName('item');
+            let prevBtn = document.getElementsByClassName('prev')[0];
+            let nextBtn = document.getElementsByClassName('next')[0];
+
+            let i = 0;
+
+            nextBtn.addEventListener('click', () => {
+                i++;
+                item[i-1].classList.remove('active');
+                if (i >= item.length) {
+                    i = item.length - 1;
+                    item[item.length - 1].classList.remove('active');
+                }
+                item[i].classList.add('active');
+            });
+            prevBtn.addEventListener('click', () => {
+                i--;
+                item[i+1].classList.remove('active');
+                if (i < 0) {
+                    i = 0
+                }
+                item[i].classList.add('active');
+            });
+        };//script end
+    </script>
+</head>
+<body>
+    <section class="section">
+        <div class="list">
+            <div class="item active">
+                <img src="img/image 1.jpg" alt="">
+                <div class="text">
+                    <h2>item title 1</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quam, veritatis labore itaque autem modi quos ab corrupti possimus facere laborum exercitationem ducimus odit amet, ipsam illum nobis ut soluta.</p>
+                </div><!-- .text end -->
+            </div><!-- .item end -->
+            <div class="item">
+                <img src="img/image 2.jpg" alt="">
+                <div class="text">
+                    <h2>item title 2</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quam, veritatis labore itaque autem modi quos ab corrupti possimus facere laborum exercitationem ducimus odit amet, ipsam illum nobis ut soluta.</p>
+                </div><!-- .text end -->
+            </div><!-- .item end -->
+            <div class="item">
+                <img src="img/image 3.jpg" alt="">
+                <div class="text">
+                    <h2>item title 3</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quam, veritatis labore itaque autem modi quos ab corrupti possimus facere laborum exercitationem ducimus odit amet, ipsam illum nobis ut soluta.</p>
+                </div><!-- .text end -->
+            </div><!-- .item end -->
+            <div class="item">
+                <img src="img/image 4.jpg" alt="">
+                <div class="text">
+                    <h2>item title 4</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quam, veritatis labore itaque autem modi quos ab corrupti possimus facere laborum exercitationem ducimus odit amet, ipsam illum nobis ut soluta.</p>
+                </div><!-- .text end -->
+            </div><!-- .item end -->
+            <div class="item">
+                <img src="img/image 5.jpg" alt="">
+                <div class="text">
+                    <h2>item title 5</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quam, veritatis labore itaque autem modi quos ab corrupti possimus facere laborum exercitationem ducimus odit amet, ipsam illum nobis ut soluta.</p>
+                </div><!-- .text end -->
+            </div><!-- .item end -->
+        </div><!-- .list end -->
+        <div class="btn">
+            <button class="prev">이전</button>
+            <button class="next">다음</button>
+        </div><!-- .btn end -->
+    </section><!-- .section end -->
+</body>
+</html>

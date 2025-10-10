@@ -1,0 +1,239 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Regular.eot');
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Regular.woff2') format('woff2'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Light.eot');
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Light.woff2') format('woff2'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Medium.eot');
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Medium.woff2') format('woff2'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-SemiBold.eot');
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-SemiBold.woff2') format('woff2'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Thin.eot');
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Thin.woff2') format('woff2'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Bold.eot');
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Bold.woff2') format('woff2'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR';
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-ExtraLight.eot');
+    src: url('../font/IBMPlexSansKR/IBMPlexSansKR-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-ExtraLight.woff2') format('woff2'),
+        url('../font/IBMPlexSansKR/IBMPlexSansKR-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    position: relative;
+    font-family: IBMPlexSansKR;
+}
+.header {
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.header .inner {
+    width: 1536px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .logo {
+    width: 128px;
+}
+.header .inner .logo a {
+    width: 100%;
+}
+.header .inner .logo a img {
+    width: 100%;
+}
+.header .inner .menu_btn {
+    width: 32px;
+    border: 0;
+    background-color: transparent;
+}
+.header .inner .menu_btn a {
+    width: 100%;
+}
+.header .inner .menu_btn a img {
+    width: 100%;
+}
+.header .inner .nav {
+    width: 100%;
+    height: 100vh;
+    background-color: #121212d9;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.1s linear;
+    z-index: 0;
+}
+.header .inner .nav.active {
+    right: 0;
+}
+.header .inner .nav .nav_inner {
+    width: 556px;
+    height: 100%;
+    background-color: #262f3c;
+    color: #99a1b1;
+    padding: 40px;
+}
+.header .inner .nav .nav_inner .close {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+.header .inner .nav .nav_inner .close .close_btn {
+    border: 0;
+    background-color: transparent;
+    width: 26px;
+}
+.header .inner .nav .nav_inner .close .close_btn a {
+    width: 100%;
+    display: block;
+}
+.header .inner .nav .nav_inner .close .close_btn a img {
+    width: 100%;
+}
+.header .inner .nav .nav_inner .gnb {
+    font-size: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+}
+.header .inner .nav .nav_inner .gnb li:nth-child(7):after {
+    content: '';
+    display: block;
+    width: 476px;
+    height: 1px;
+    background-color: #99a1b1;
+    margin: 28px 0;    
+}
+.header .inner .nav .nav_inner .gnb li:hover {
+    font-weight: bold;
+    color: #fff;
+}
+.header .inner .nav .nav_inner .gnb li a {
+    display: block;
+}
+.main_visual {
+    height: 100vh;
+    position: relative;
+}
+.main_visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.main_visual .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #fff;
+    text-align: center;
+}
+.main_visual .text h2 {
+    font-size: 95px;
+    line-height: 150%;
+    font-weight: 600;
+}
+.main_visual .text h3 {
+    font-size: 40px;
+    line-height: 150%;
+    font-weight: 500;
+}
+.main_visual .app {
+    width: 228px;
+    height: 70px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    line-height: 70px;
+    display: flex;
+    gap: 9.5px;
+    background-color: #0078ff;
+    position: absolute;
+    right: 200px;
+    bottom: 60px;
+}
+.main_visual .app img {
+    width: 15.5px;
+}
+.main_visual .app p {
+    font-size: 20px;
+    color: #fff;
+}

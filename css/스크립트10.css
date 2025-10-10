@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.section {
+    width: 700px;
+    position: relative;
+    margin: 50px auto;
+}
+.section .list .item {
+    width: 100%;
+    display: none;
+}
+.section .list .item.active {
+    display: block;
+}
+.section .list .item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+.section .list .text {
+    margin-top: 10px;
+}
+.section .btn {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.section .btn button {
+    width: 50px;
+    font-size: 18px;
+    margin: 0 10px 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,81 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.wrap {
+    background-color: white;
+    padding: 100px 0;
+}
+.wrap .list {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.wrap .list .item {
+    width: 352px;
+}
+.wrap .list .item img {
+    width: 100%;
+    height: 352px;
+    object-fit: cover;
+}
+.wrap .list .item .text h2 {
+    margin: 20px 0 12px;
+}
+.section {
+    background-color: #EFEFEF;
+    padding: 80px 0;
+}
+.section .inner {
+    width: 1595px;
+    margin: 0 auto;
+}
+.section .inner h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.section .inner .list ul {
+    margin-bottom: 32px;
+}
+.section .inner .list li {
+    height: 50px;
+    padding: 12px 28px;
+    border: 1px solid #888888;
+    border-radius: 40px;
+    display: inline-block;
+    margin-right: 12px;
+}
+.section .inner .list li:nth-child(1) {
+    height: 50px;
+    background-color: #8833FF;
+    color: white;
+}
+.section .inner .list .box {
+    display: flex;
+    justify-content: space-between;
+}
+.section .inner .list .box .item {
+    background-color: white;
+    padding: 20px;
+}
+.section .inner .list .box .item img {
+    width: 340px;
+    object-fit: cover;
+}
+.section .inner .list .box .item .text h3 {
+    font-size: 20px;
+    margin: 20px 0 12px;
+}
+.section .inner .list .box .item .text p {
+    color: #333333;
+}

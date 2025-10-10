@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이노션에스</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+
+        window.onload = () => {
+            document.querySelector('.menu_btn').addEventListener('click', () => {
+                document.querySelector('.nav_mobile').classList.add('active');
+            });
+            document.querySelector('.close_btn').addEventListener('click', () => {
+                document.querySelector('.nav_mobile').classList.remove('active');
+            });
+        };
+
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+
+            <h1 class="logo">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+            </h1><!-- .logo end -->
+
+            <nav class="nav_pc pc">
+                <ul class="gnb">
+                    <li><a href="#" class="depth-01">ABOUT<span class="line">-</span>S</a></li>
+                    <li><a href="#" class="depth-01">WORK<span class="line">-</span>S</a></li>
+                    <li><a href="#" class="depth-01">SOLUSTION<span class="line">-</span>S</a></li>
+                    <li><a href="#" class="depth-01">INSIGHT<span class="line">-</span>S</a></li>
+                    <li><a href="#" class="depth-01">CAREER<span class="line">-</span>S</a></li>
+                    <li><a href="#" class="depth-01">CONTACT<span class="line">-</span>S</a></li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav_pc.pc end -->
+
+            <ul class="global_pc pc">
+                <li><a href="#" class="depth-01">KOR</a></li>
+                <li><a href="#" class="depth-01">ENG</a></li>
+            </ul><!-- .global_pc.pc end -->
+
+            <button class="menu_btn mobile">
+                <img src="img/btn_menu.svg" alt="">
+            </button><!-- .menu_btn.mobile end -->
+
+            <nav class="nav_mobile mobile">
+                <button class="close_btn">
+                    <img src="img/ic_close.svg" alt="">
+                </button><!-- .close_btn end -->
+                <ul class="gnb">
+                    <li><a href="#" class="depth-01">ABOUTS</a></li>
+                    <li><a href="#" class="depth-01">WORKS</a></li>
+                    <li><a href="#" class="depth-01">SOLUSTIONS</a></li>
+                    <li><a href="#" class="depth-01">INSIGHTS</a></li>
+                    <li><a href="#" class="depth-01">CAREERS</a></li>
+                    <li><a href="#" class="depth-01">CONTACTS</a></li>
+                </ul><!-- .gnb end -->
+                <div class="mobile_bottom">
+                    <p>© INNOCEAN-S.</p>
+                    <ul class="global_mobile">
+                        <li><a href="#" class="depth-01">KOR</a></li>
+                        <li><a href="#" class="depth-01">ENG</a></li>
+                    </ul><!-- .global_mobile end -->
+                </div><!-- .mobile_bottom end -->
+
+            </nav><!-- .nav_mobile.mobile end -->
+
+            
+
+        </div><!-- .inner end -->
+    </header><!-- .header end -->
+
+    <main class="main">
+        <section class="main_visual">
+            <img src="img/kv.png" alt="">
+        </section><!-- .main_visual end -->
+    </main><!-- .main end -->
+</body>
+</html>

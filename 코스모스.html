@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코스모스-스크립트11연습</title>
+    <link rel="stylesheet" href="css/코스모스.css">
+    <script>
+        window.onload = () => {
+
+            let header = document.getElementsByClassName('header')[0];
+
+            window.addEventListener('scroll', () => {
+                
+                let scrollBar = window.scrollY;
+
+                if (scrollBar > 70) {
+                    header.classList.add('active');
+                } else {
+                    header.classList.remove('active');
+                }
+            });
+        };//script end
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#"><img src="img/logo_cymbol_white.svg" alt=""></a>
+            </h1><!-- .logo end -->
+            <img src="img/all_menu_off.png" alt="">
+            <a href="#" class="book">BOOK NOW</a>
+        </div><!-- .inner end -->
+    </header><!-- .header end -->
+    <main class="main">
+        <section class="main_visual">
+            <video src="img/main_kv.mp4" autoplay muted loop></video>
+            <div class="text">
+                <h2>Where you meet fortune and prosperity</h2>
+                <p>당신의 ‘행운과 번영’을 만나는 곳</p>
+            </div><!-- .text end -->
+            <button><img src="img/sound_off.svg" alt=""></button>
+            <a href="#" class="kakao"><img src="img/kakao_pc.png" alt=""></a>
+        </section><!-- .main_visual end -->
+        <section class="section-01">
+            <h2>울릉도의 ‘기운생동’한 대자연에서<br />
+                영감받은 코스모스 울릉도</h2>
+        </section><!-- .section-01 end -->
+    </main><!-- .main end -->
+</body>
+</html>

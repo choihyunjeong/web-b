@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건식 스타일</title>
+    <link rel="stylesheet" href="css/스크립트04.css">
+    <script>
+        window.onload = () => {
+            let body = document.getElementsByTagName('body')[0];
+            let modeBtn = document.getElementsByClassName('mode_btn')[0];
+
+            modeBtn.addEventListener('click', () => {
+                //alert();
+                if(getComputedStyle(body).backgroundColor == 'rgb(255, 255, 255)') {
+                    //alert('조건맞음');
+                    body.style.backgroundColor = '#000';
+                    modeBtn.innerHTML = '<span>🎃</span>';
+                } else {
+                    //alert('조건맞지않음');
+                    body.style.backgroundColor = '#fff';
+                    modeBtn.innerHTML = '<div>배경색변경</div>';
+                }
+            });
+        };//script end
+    </script>
+</head>
+<body>
+    <div class="mode_btn">배경색변경</div>
+</body>
+</html>

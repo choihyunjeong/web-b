@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대성그룹</title>
+    <link rel="stylesheet" href="css/daesung.css">
+
+    <script>
+        window.onload = () => {
+
+            document.querySelector('.menu_btn').addEventListener('click', () => {
+                document.querySelector('.sub_nav').classList.add('active');
+            });
+            document.querySelector('.close_btn1').addEventListener('click', () => {
+                document.querySelector('.sub_nav').classList.remove('active');
+            });
+            document.querySelector('.close_btn2').addEventListener('click', () => {
+                document.querySelector('.sub_nav').classList.remove('active');
+            });
+            document.querySelector('.depth-03').addEventListener('click', () => {
+                document.querySelector('.depth-04').classList.toggle('active');
+                document.querySelector('.depth-03').classList.toggle('active');
+            });
+            document.querySelector('.depth-03-1').addEventListener('click', () => {
+                document.querySelector('.depth-05').classList.toggle('active');
+                document.querySelector('.depth-03-1').classList.toggle('active');
+            });
+            document.querySelector('.depth-03-2').addEventListener('click', () => {
+                document.querySelector('.depth-06').classList.toggle('active');
+                document.querySelector('.depth-03-2').classList.toggle('active');
+            });
+            document.querySelector('.depth-03-3').addEventListener('click', () => {
+                document.querySelector('.depth-07').classList.toggle('active');
+                document.querySelector('.depth-03-3').classList.toggle('active');
+            });
+
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#"><img src="img/daesung_logo1.png" alt=""></a>
+            </h1><!-- .logo end -->
+            <nav class="nav">
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="depth-01">그룹소개</a>
+                        <ul class="depth-02">
+                            <li><a href="#">기업소개(CI)</a></li>
+                            <li><a href="#">CEO</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth-01">사업분야</a>
+                        <ul class="depth-02">
+                            <li><a href="#">에너지</a></li>
+                            <li><a href="#">환경</a></li>
+                            <li><a href="#">금융</a></li>
+                            <li><a href="#">문화/서비스</a></li>
+                            <li><a href="#">비영리재단</a></li>
+                            <li><a href="#">해외법인</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth-01">채용</a>
+                        <ul class="depth-02">
+                            <li><a href="#">인재상</a></li>
+                            <li><a href="#">채용공고</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth-01">프레스센터</a>
+                        <ul class="depth-02">
+                            <li><a href="#">언론기사</a></li>
+                            <li><a href="#">보도자료</a></li>
+                        </ul><!-- .depth-02 end -->
+                    </li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav end -->
+            <div class="icon_inner">
+                <button class="global">
+                    <a href="#"><img src="img/hd_lang_w.png" alt=""></a>
+                </button><!-- .global end -->
+                <ul class="global_inner">
+                    <li><a href="#">KOR</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul><!-- .global_inner end -->
+                <button class="menu_btn">
+                    <a href="#"><img src="img/hd_menu.png" alt=""></a>
+                </button><!-- .menu_btn end -->
+                <div class="sub_nav">
+                    <div class="sub_nav_inner">
+                        <div class="close">
+                            <button class="close_btn1">
+                                <a href="#">Close</a>
+                            </button><!-- .close_btn1 -->
+                            <button class="close_btn2">
+                                <a href="#"><img src="img/all_menu_close_w.png" alt=""></a>
+                            </button><!-- .close_btn2 end -->
+                        </div><!-- .close end -->
+                        <ul class="sub_gnb">
+                            <li>
+                                <a href="#" class="depth-03">그룹소개</a>
+                                <ul class="depth-04">
+                                    <li><a href="#">- 기업소개(CI)</a></li>
+                                    <li><a href="#">- CEO</a></li>
+                                    <li><a href="#">- 연혁</a></li>
+                                    <li><a href="#">- 오시는길</a></li>
+                                </ul><!-- .depth-04 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth-03-1">사업분야</a>
+                                <ul class="depth-05">
+                                    <li><a href="#">- 에너지</a></li>
+                                    <li><a href="#">- 환경</a></li>
+                                    <li><a href="#">- 금융</a></li>
+                                    <li><a href="#">- 문화/서비스</a></li>
+                                    <li><a href="#">- 비영리재단</a></li>
+                                    <li><a href="#">- 해외법인</a></li>
+                                </ul><!-- .depth-05 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth-03-2">채용</a>
+                                <ul class="depth-06">
+                                    <li><a href="#">- 인재상</a></li>
+                                    <li><a href="#">- 채용공고</a></li>
+                                </ul><!-- .depth-06 end -->
+                            </li>
+                            <li>
+                                <a href="#" class="depth-03-3">프레스센터</a>
+                                <ul class="depth-07">
+                                    <li><a href="#">- 언론기사</a></li>
+                                    <li><a href="#">- 보도자료</a></li>
+                                </ul><!-- .depth-07 end -->
+                            </li>
+                        </ul><!-- .sub_gnb -->
+                    </div><!-- .sub_nav_inner end -->
+                </div><!-- .sub_nav end -->
+            </div><!-- .icon_inner end -->
+        </div><!-- .inner end -->
+    </header><!-- .header end -->
+    <main class="main">
+        <section class="main_visual">
+            <img src="img/main-1.jpg" alt="">
+            <div class="text">
+                <p>"Endless Challenges for a Better Life and a Greener Tomorrow."</p>
+                <h2>대성그룹은 인류의 풍요로운 삶과 깨끗한<br />
+                    환경을 위해 끊임없이 도전합니다</h2>
+            </div><!-- .text end -->
+        </section><!-- .main_visual end -->
+    </main><!-- .main end -->
+</body>
+</html>

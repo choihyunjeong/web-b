@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.wrap {
+    width: 1920px;
+}
+.wrap .header {
+    width: 1500px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 100px;
+}
+.wrap .header .logo img {
+    width: 230px;
+    object-fit: cover;
+    display: block;
+}
+.wrap .header .nav ul {
+    display: flex;
+    column-gap: 60px;
+}
+.wrap .header .nav ul li {
+    font-size: 18px;
+}
+.wrap .header .login {
+    height: 48px;
+    background-color: #F5F9FF;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    column-gap: 20px;
+}
+.wrap .header .login a {
+    display: block;
+}
+.wrap .main .main_visual {
+    position: relative;
+}
+.wrap .main .main_visual img {
+    display: block;
+    object-fit: cover;
+}
+.wrap .main .main_visual .position {
+    position: absolute;
+    top: 245px;
+    left: 210px;
+}
+.wrap .main .main_visual .position h2 {
+    font-size: 47px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.wrap .main .main_visual .position p {
+    color: #fff;
+    margin-bottom: 60px;
+}
+.wrap .main .main_visual .position a {
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    height: 52px;
+    width: 154px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 26px;
+    line-height: 52px;
+    padding: 0 22.5px;
+}
+.wrap .main .main_visual .position a span {
+    display: block;
+    color: #fff;
+}
+.wrap .main .main_visual .position a img {
+    width: 6px;
+    height: 10px;
+    object-fit: cover;
+    display: block;
+}
+.wrap .main .section-01 {
+    width: 1500px;
+    margin: 162px auto 109px;
+}
+.wrap .main .section-01 h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.wrap .main .section-01 span {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    margin-bottom: 40px;
+    display: block;
+}
+.wrap .main .section-01 .in {
+    display: flex;
+    justify-content: space-between;
+}
+.wrap .main .section-01 .box-01 {
+    width: 738px;
+    height: 480px;
+    background-color: #0072FF;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.wrap .main .section-01 .box-01 .img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.wrap .main .section-01 .box-01 .inner {
+    padding: 50px 0 0 50px;
+}
+.wrap .main .section-01 .box-01 .inner p {
+    font-size: 18px;
+    color: #fff;
+}
+.wrap .main .section-01 .box-01 .inner h3 {
+    font-size: 28px;
+    margin: 12px 0 35px;
+    color: #fff;
+}
+.wrap .main .section-01 .box-01 .inner a {
+    width: 154px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    padding: 0 20px;
+}
+.wrap .main .section-01 .box-01 .inner a img {
+    display: blcok;
+    width: 6px;
+    height: 10px;
+    object-fit: cover;
+}
+.wrap .main .section-01 .box-02 {
+    position: relative;
+}
+.wrap .main .section-01 .box-02 img {
+    border-radius: 50px;
+}
+.wrap .main .section-01 .box-02 .inner {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.wrap .main .section-01 .box-02 .inner p {
+    font-size: 18px;
+    color: #fff;
+}
+.wrap .main .section-01 .box-02 .inner h3 {
+    font-size: 28px;
+    margin: 12px 0 35px;
+    color: #fff;
+}
+.wrap .main .section-01 .box-02 .inner a {
+    width: 154px;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.301);
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    padding: 0 20px;
+}
+.wrap .main .section-02 {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.wrap .main .section-02 .list {
+    width: 350px;
+    height: 350px;
+    border-radius: 28px;
+    border: 1px solid #000;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 180px;
+}
+.wrap .main .section-02 .list h2 {
+    font-size: 16px;
+    color: #0072FF;
+}
+.wrap .main .section-02 .list h3 {
+    font-size: 16px;
+    margin: 16px 0 150px;
+}
+.wrap .main .section-02 .list p {
+    font-size: 14px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 지정</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .popup {
+            width: 400px;
+        }
+        .popup img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+        .popup button {
+            width: 100%;
+            height: 50px;
+            background-color: antiquewhite;
+            border: 1px solid #000;
+            font-size: 20px;
+        }
+        .box {
+            width: 300px;
+        }
+        .box img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        .box button {
+            width: 100%;
+            height: 50px;
+            border: 0;
+            background-color: cadetblue;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        window.onload = () => {
+            // 요소찾기(선택자찾기) 인덱스값 첫번째는 0 두번째는 1(인덱스값은 필수)
+            // class들 중에서는 getElementsByClassName
+            // document.getElementsByTagName('button')[0];
+            // id는 고유의 이름이라서 인덱스값 작성 안함
+            let btn = document.getElementsByTagName('button')[0];
+            let text01 = document.getElementsByTagName('div')[0];
+            let text02 = document.getElementsByClassName('text-02')[0];
+            let text03 = document.getElementById('text-03');
+
+            btn.addEventListener('click', () => {
+                text02.style.color = 'red';
+                text01.style.backgroundColor = 'yellow';
+                text03.style.fontSize = '30px';
+                text03.style.fontWeight = 'bold';
+            });
+
+            let popup = document.getElementsByClassName('popup')[0];
+            let popupBtn = document.getElementsByTagName('button')[1];
+
+            popupBtn.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+
+            let boxImage = document.getElementsByTagName('img')[1];
+            let boxBtn = document.getElementsByTagName('button')[2];
+
+            boxBtn.addEventListener('click', () => {
+                boxImage.src = 'img/image 3.jpg';
+                boxBtn.innerText = '♥'
+            });
+
+        }; //script end
+    </script>
+</head>
+<body>
+    <button>버튼</button>
+    <div>내용 1</div>
+    <div class="text-02">내용 2</div>
+    <div id="text-03">내용 3</div>
+
+    <div class="popup">
+        <img src="img/image 1.jpg" alt="">
+        <button>팝업닫기</button>
+    </div><!-- .popup end -->
+
+    <div class="box">
+        <img src="img/image 2.jpg" alt="">
+        <button>이미지변경</button>
+    </div><!-- .box end -->
+</body>
+</html>

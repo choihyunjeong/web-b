@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.mobile {
+    display: none;
+}
+.header {
+    height: 100px;
+    border-bottom: 1px solid #333;
+}
+.header .inner {
+    max-width: 1280px;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .inner .logo {
+    height: 60px;
+}
+.header .inner .logo a {
+    display: block;
+    height: 100%;
+}
+.header .inner .logo a img {
+    height: 100%;
+    object-fit: cover;
+}
+.header .inner .nav_pc .gnb {
+    display: flex;
+}
+.header .inner .nav_pc .gnb > li {
+    position: relative;
+}
+.header .inner .nav_pc .gnb > li .depth-01 {
+    display: block;
+    line-height: 100px;
+    padding: 0 40px;
+}
+.header .inner .nav_pc .gnb > li .depth-02 {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    border: 1px solid #333;
+    text-align: center;
+    display: none;
+}
+.header .inner .nav_pc .gnb > li:hover .depth-02 {
+    display: block;
+}
+.header .inner .nav_pc .gnb > li .depth-02 li a {
+    display: block;
+    padding: 16px 0;
+}
+
+@media screen and (max-width:1024px) {
+    .pc {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .header .inner .nav_mobile {
+        width: 80%;
+        height: 100%;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        background-color: rgb(255, 219, 143);
+        transition: right 0.7s;
+        overflow-y: auto;
+    }
+    .header .inner .nav_mobile.active {
+        right: 0;
+    }
+    .header .inner .nav_mobile .close_btn {
+        height: 40px;
+        border: 0;
+        background-color: transparent;
+        margin: 30px;
+    }
+    .header .inner .nav_mobile .close_btn img {
+        height: 100%;
+    }
+    .header .inner .nav_mobile .gnb {
+        margin: 0 80px;
+    }
+    .header .inner .nav_mobile .gnb >li {
+        padding: 20px 0;
+        display: flex;
+        gap: 40px;
+        align-items: baseline;
+    }
+    .header .inner .nav_mobile .gnb >li .depth-01 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .header .inner .nav_btn {
+        height: 40px;
+        border: 0;
+        background-color: transparent;
+    }
+    .header .inner .nav_btn img {
+        height: 100%;
+    }
+}/* 1024px */

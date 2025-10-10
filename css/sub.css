@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('47common.css');
+
+.sub section {
+    max-width: 1400px;
+    width: calc(100% - 32px);
+    margin: 160px auto;
+}
+.sub h2 {
+    font-family: 'SBAggro';
+    font-size: 40px;
+    font-weight: bold;
+}

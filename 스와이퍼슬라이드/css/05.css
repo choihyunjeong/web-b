@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.section {
+    position: relative;
+}
+.section h2 {
+    width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.section .swiper {
+    position: static;
+}
+.section .swiper.sectionSwiper .swiper-wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    position: static;
+}
+.section .swiper.sectionSwiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.section .swiper-horizontal>.swiper-pagination-bullets, 
+.section .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.section .swiper-pagination-custom, 
+.section .swiper-pagination-fraction {
+    bottom: -30px;
+}
+.section-02 {
+    margin: 100px 0;
+}
+.section-02 h2 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.section-02 .swiper.mySwiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+.section-02 .swiper.mySwiper .swiper-wrapper .swiper-slide .text {
+    width: 100%;
+    height: 100%;
+    background-color: #0000004d;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    display: none;
+}
+.section-02 .swiper.mySwiper .swiper-wrapper .swiper-slide .text strong {
+    font-size: 32px;
+}
+.section-02 .swiper.mySwiper .swiper-wrapper .swiper-slide .text p {
+    font-size: 20px;
+}
+/* +를 하면 뒤에 있는 것을 선택자로 지정할 수 있다. */
+.section-02 .swiper.mySwiper .swiper-slide.swiper-slide-next + .swiper-slide .text {
+    display: flex;
+}

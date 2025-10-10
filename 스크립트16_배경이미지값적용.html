@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지값 적용</title>
+    <link rel="stylesheet" href="css/스크립트16.css">
+    <script>
+        window.onload = () => {
+            let section = document.querySelector('.section');
+            let item = section.querySelectorAll('.item');
+            let itemImage = section.querySelectorAll('.item_image');
+            
+            for(let i = 0; i < item.length; i++) {
+                item[i].addEventListener('mouseenter', () => {
+                    console.log(itemImage[i].src);
+                    //section.style.backgroundImage = 'url("img/image 2.jpg")';
+                    section.style.backgroundImage = 'url(' + itemImage[i].src + ')';
+                });
+            }
+        }; //script end
+    </script>
+</head>
+<body>
+    <section class="section">
+        <div class="inner">
+            <h3>Section Title</h3>
+            <div class="list">
+                <div class="item">
+                    <img src="img/image 1.jpg" alt="" class="item_image">
+                    <div class="text">
+                        <h2>item 1</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui earum est nobis reiciendis molestias provident sapiente, voluptatem a incidunt et consequatur natus iste alias ad dolorum porro necessitatibus doloremque eligendi.</p>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <img src="img/image 2.jpg" alt="" class="item_image">
+                    <div class="text">
+                        <h2>item 2</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui earum est nobis reiciendis molestias provident sapiente, voluptatem a incidunt et consequatur natus iste alias ad dolorum porro necessitatibus doloremque eligendi.</p>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <img src="img/image 3.jpg" alt="" class="item_image">
+                    <div class="text">
+                        <h2>item 3</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui earum est nobis reiciendis molestias provident sapiente, voluptatem a incidunt et consequatur natus iste alias ad dolorum porro necessitatibus doloremque eligendi.</p>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+                <div class="item">
+                    <img src="img/image 4.jpg" alt="" class="item_image">
+                    <div class="text">
+                        <h2>item 4</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui earum est nobis reiciendis molestias provident sapiente, voluptatem a incidunt et consequatur natus iste alias ad dolorum porro necessitatibus doloremque eligendi.</p>
+                    </div><!-- .text end -->
+                </div><!-- .item end -->
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </section><!-- .section end -->
+</body>
+</html>
