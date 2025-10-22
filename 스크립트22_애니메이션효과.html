@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 효과</title>
+    <link rel="stylesheet" href="css/스크립트22.css">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+            $('.hide').on('click', function(){
+                $(this).siblings('.image').hide();
+            });
+            $('.show').on('click', function(){
+                $(this).siblings('.image').show();
+            });
+            $('.fadeIn').on('click', function(){
+                $(this).siblings('.image').fadeIn();
+            });
+            $('.fadeOut').on('click', function(){
+                $(this).siblings('.image').fadeOut();
+            })
+            $('.slideUp').on('click', function(){
+                $(this).siblings('.image').slideUp();
+            });
+            $('.slideDown').on('click', function(){
+                $(this).siblings('.image').slideDown();
+            });
+            $('.toggle').on('click',function(){
+                $(this).siblings('.image').toggle();
+            });
+            $('.fadeToggle').on('click',function(){
+                $(this).siblings('.image').fadeToggle(1000, 'easeInBounce');
+            });
+            $('.slideToggle').on('click',function(){
+                $(this).siblings('.image').slideToggle(1000, 'easeOutElastic');
+            });
+
+            $('.animate').on('click', function(){
+                $(this).siblings('.image').animate({
+                    //left,right,top,bottom을 써서 애니메이션을 줄려면
+                    //css에서 포지션을 써야지 적용된다.
+                    'left' : '500px'
+                },1000, 'easeOutElastic');
+            });
+        }); //script end
+    </script>
+</head>
+<body>
+    <div class="list">
+        <div class="item">
+            <button type="button" class="hide">hide</button>
+            <button type="button" class="show">show</button>
+            <div class="image">
+                <img src="img/image 1.jpg" alt="image1">
+            </div><!-- .image end -->
+        </div><!-- .item end -->
+        <div class="item">
+            <button type="button" class="fadeIn">Fade In</button>
+            <button type="button" class="fadeOut">Fade Out</button>
+            <div class="image">
+                <img src="img/image 2.jpg" alt="image2">
+            </div><!-- .image end -->
+        </div><!-- .item end -->
+        <div class="item">
+            <button type="button" class="slideUp">Slide Up</button>
+            <button type="button" class="slideDown">Slide Down</button>
+            <div class="image">
+                <img src="img/image 3.jpg" alt="image3">
+            </div><!-- .image end -->
+        </div><!-- .item end -->
+        <div class="item">
+            <button type="button" class="toggle">Toggle</button>
+            <div class="image">
+                <img src="img/image 4.jpg" alt="image4">
+            </div><!-- .image end -->
+        </div><!-- .item end -->
+        <div class="item">
+            <button type="button" class="fadeToggle">Fade Toggle</button>
+            <div class="image">
+                <img src="img/image 5.jpg" alt="image5">
+            </div><!-- .image end -->
+        </div><!-- .item end -->
+        <div class="item">
+            <button type="button" class="slideToggle">Slide Toggle</button>
+            <div class="image">
+                <img src="img/image 11.jpg" alt="image6">
+            </div><!-- .image end -->
+        </div><!-- .item end -->
+        <div class="item">
+            <button type="button" class="animate">Animate</button>
+            <div class="image">
+                <img src="img/이미지4.jpg" alt="image7">
+            </div><!-- .image end -->
+        </div><!-- .item end -->
+    </div><!-- .list end -->
+</body>
+</html>

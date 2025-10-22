@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스커서</title>
+    <link rel="stylesheet" href="css/스크립트23.css">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+
+            $(window).on('mousemove', function(e){
+
+                let mouseX = e.pageX;
+                let mouseY = e.pageY;
+
+                //console.log(mouseX)
+                //console.log(mouseY)
+                $('.cursor').css({
+                    'left' : mouseX,
+                    'top' : mouseY
+                });
+
+            });
+            $('.main img').on('mouseenter', function(){
+                $('.cursor').addClass('active');
+            });
+            $('.main img').on('mouseleave', function(){
+                $('.cursor').removeClass('active');
+            });
+
+        }); //script end
+    </script>
+</head>
+<body>
+    <div class="cursor">
+        <div class="in">
+            <span>view</span>
+        </div><!-- .in end -->
+    </div><!-- .cursor end -->
+
+    <div id="wrap">
+        <header class="header">header</header>
+        <main class="main">
+            <img src="img/image 1.jpg" alt="main_visual">
+        </main><!-- .main end -->
+    </div><!-- #wrap end -->
+</body>
+</html>

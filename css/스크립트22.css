@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import url(reset.css);
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list .item {
+    width: 30%;
+    margin: 20px;
+}
+.list .item button {
+    border: 2px solid cornflowerblue;
+    color: #5a8be6;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.list .item button:hover {
+    background-color: cornflowerblue;
+    color: #fff;
+}
+.list .item .image {
+    padding-bottom: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+.list .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

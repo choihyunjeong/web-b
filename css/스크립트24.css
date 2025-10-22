@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import url(reset.css);
+
+* {
+    cursor: none;
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid cornflowerblue;
+    background-color: azure;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.cursor.scale {
+    width: 80px;
+    height: 80px;
+    background-color: cornflowerblue;
+}
+.cursor.scale::before {
+    content: 'drag';
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    height: 100px;
+    background-color: antiquewhite;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.main .item {
+    width: 400px;
+    margin: 100px auto;
+}
+.main .item a {
+    display: block;
+}
+.main .item a img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.main .item a p {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 140%;
+}
