@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>움직이는 메뉴바</title>
+    <link rel="stylesheet" href="css/스크립트25.css">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            //부모를 기준으로 x축 죄표값 확인 => position().left
+            //y축 좌표값 확인 => position().top
+
+            $('.menu-01 ul li').on('mouseenter', function(){
+                //console.log($(this).position().left)
+
+                let moveLeft = $(this).position().left;
+                $('.menu-01 .menu_bar').stop().animate({
+                    'left' : moveLeft
+                });
+
+            });
+
+            let menuWidth = $('.menu-02 ul li:first').outerWidth();
+            $('.menu-02 .menu_bar').width(menuWidth);
+
+            //outerWidth() 패딩과 테두리를 포함한 넓이값 찾기
+            $('.menu-02 ul li').on('mouseenter', function(){
+                $('.menu-02 .menu_bar').stop().animate({
+                    'left' : $(this).position().left,
+                    'width' : $(this).outerWidth(),
+                });
+            });
+
+        }); //script end
+    </script>
+</head>
+<body>
+
+    <div class="menu-01">
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+            <li>menu4</li>
+            <li>menu5</li>
+        </ul>
+
+        <div class="menu_bar">
+            <span>메뉴바</span>
+        </div><!-- .menu_bar end -->
+    </div><!-- .menu-01 end -->
+
+    <div class="menu-02">
+        <ul>
+            <li>네쇼라Pick</li>
+            <li>푸드</li>
+            <li>라이프/테크</li>
+            <li>취미/여행/문화</li>
+            <li>쇼핑라이브</li>
+        </ul>
+
+        <div class="menu_bar">
+            <span>메뉴바</span>
+        </div><!-- .menu_bar end -->
+    </div><!-- .menu-02 end -->
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로딩페이지</title>
+    <link rel="stylesheet" href="css/스크립트26.css">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+
+            $('.loading').addClass('active');
+
+            //setTimeOut() => 일정시간뒤에 실행
+            setTimeout(function(){
+                //시간뒤에 실행될 코드
+                $('.loading').slideUp();
+            }, /*시간*/ 3000);
+
+        }); //script end
+    </script>
+</head>
+<body>
+    <div class="loading">
+        <div>
+            <span>로</span>
+            <span>딩</span>
+            <span>중</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </div>
+    </div><!-- .loading end -->
+
+    <div id="wrap">
+        <header class="header">header</header>
+        <main class="main">main contents</main>
+        <footer class="footer">footer</footer>
+    </div><!-- #wrap end -->
+</body>
+</html>

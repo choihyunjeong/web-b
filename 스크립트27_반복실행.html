@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복실행</title>
+    <link rel="stylesheet" href="css/스크립트27.css">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+
+            //setInterval() => 일정시간동안 반복적으로 실행
+            let i = 0;
+            let topBanner = $('.top_banner ul li');
+
+            setInterval(function(){
+                //실행될 스크립트 코드
+                //eq(index) => 제이쿼리에서 요소의 순서 지정
+
+                i++;
+                //console.log(i);
+                if(i >= topBanner.length) {
+                    i = 0;
+                }
+                topBanner.removeClass('on');
+                topBanner.eq(i).addClass('on');
+
+            },/*시간*/ 2000);
+
+        });
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div class="top_banner">
+            <ul>
+                <li class="on">APP 알림만 켜도 즉시 할인 쿠폰 증정!</li>
+                <li>유튜브 속 도드람, 맛있는 특가!</li>
+                <li>택배사고 발생 시 3가지 사진을 꼭 찍어주세요!</li>
+            </ul>
+        </div><!-- .top_banner end -->
+        <header class="header">header</header>
+        <main class="main">main contents</main>
+        <footer class="footer">footer</footer>
+    </div><!-- #wrap end -->
+</body>
+</html>
